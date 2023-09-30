@@ -7,6 +7,8 @@ version = '1.0-SNAPSHOT'
 
 ext {
     fastjsonVersion = '2.0.40'
+    mysqlVersion = '8.0.33'
+    commonsVersion = '3.13.0'
 }
 
 
@@ -28,6 +30,10 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation "com.alibaba.fastjson2:fastjson2:$fastjsonVersion"
+    implementation "mysql:mysql-connector-java:$mysqlVersion"
+    implementation "org.apache.commons:commons-lang3:$commonsVersion"
+
+
 
 }
 
